@@ -1,0 +1,2 @@
+# alekssmykHackerRank
+My HackerRank Solutions
