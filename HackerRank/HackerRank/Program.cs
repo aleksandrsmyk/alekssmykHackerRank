@@ -12,53 +12,27 @@ using System.Text.RegularExpressions;
 using System.Text;
 using System;
 
-class Solution
+namespace HackerRank
 {
-
-    // Complete the repeatedString function below.
-    static long repeatedString(string s, long n)
+    public partial class Program
     {
+        static void Main(string[] args)
+        {
+            //string s = Console.ReadLine();
 
-        if (n == 0)
-            return 0;
+            //long n = Convert.ToInt64(Console.ReadLine());
+            int n = Convert.ToInt32(Console.ReadLine());
 
-        int countAinString = s.Count(x => x == 'a');
-        Console.WriteLine($"countAinString={countAinString}");
+            //long result = repeatedString(s, n);
 
-        if (countAinString == 0)
-            return 0;
+            //textWriter.WriteLine(result);
 
-        int sLength = s.Length;
-        if (sLength == 1)
-            return n;
+            //textWriter.Flush();
+            //textWriter.Close();
 
-        long countOfCompleteStrings = n / sLength;
-        Console.WriteLine($"countOfCompleteStrings={countOfCompleteStrings}");
+            //Console.WriteLine(result);
 
-        long countOfInCompleteChars = n % sLength;
-        Console.WriteLine($"countOfInCompleteChars={countOfInCompleteChars}");
-
-        int countOfIncompleteCharsOfA = s.Take((int)countOfInCompleteChars).Count(x => x == 'a');
-        Console.WriteLine($"countOfIncompleteCharsOfA={countOfIncompleteCharsOfA}");
-
-        return countOfCompleteStrings * countAinString + countOfIncompleteCharsOfA;
-    }
-
-    static void Main(string[] args)
-    {
-        //TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
-
-        string s = Console.ReadLine();
-
-        long n = Convert.ToInt64(Console.ReadLine());
-
-        long result = repeatedString(s, n);
-
-        //textWriter.WriteLine(result);
-
-        //textWriter.Flush();
-        //textWriter.Close();
-
-        Console.WriteLine(result);
+            Console.ReadKey();
+        }
     }
 }

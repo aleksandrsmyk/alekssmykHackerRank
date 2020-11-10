@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace HackerRank
 {
-    public partial class Programm
+    public partial class Program
     {
         // Complete the repeatedString function below.
         static long repeatedString(string s, long n)
