@@ -21,7 +21,7 @@ namespace HackerRank
             //string s = Console.ReadLine();
 
             //long n = Convert.ToInt64(Console.ReadLine());
-            int n = Convert.ToInt32(Console.ReadLine());
+            //int n = Convert.ToInt32(Console.ReadLine());
 
             //long result = repeatedString(s, n);
 
