@@ -32,6 +32,8 @@ namespace HackerRank
 
             //Console.WriteLine(result);
 
+            Console.WriteLine($"FindTheMall: {FindTheMall(5, 5, 2, 1, 1, 2)}");
+
             Console.ReadKey();
         }
     }
